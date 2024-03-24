@@ -1,4 +1,4 @@
-package com.krish.easy;
+package com.krish.recursion.easy;
 
 public class CountZeroes {
     public static void main(String[] args) {

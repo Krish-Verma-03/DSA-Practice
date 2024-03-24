@@ -1,4 +1,4 @@
-package com.krish.arrays;
+package com.krish.recursion.arrays;
 
 import java.util.ArrayList;
 

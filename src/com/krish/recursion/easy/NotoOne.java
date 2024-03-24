@@ -1,4 +1,4 @@
-package com.krish.easy;
+package com.krish.recursion.easy;
 
 public class NotoOne {
     public static void main(String[] args) {

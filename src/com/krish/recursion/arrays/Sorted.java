@@ -1,4 +1,4 @@
-package com.krish.arrays;
+package com.krish.recursion.arrays;
 
 public class Sorted {
     public static void main(String[] args) {

@@ -1,7 +1,17 @@
-package com.krish.easy;
+package com.krish.recursion.easy;
 
-public class Palindrome {
-    static int rev(int n) {
+public class Steps {
+    static int sum = 0;
+    static void rev1(int n) {
+        if (n == 0) {
+            return;
+        }
+        int rem = n % 10;
+        sum = sum * 10 + rem;
+        rev1(n/10);
+    }
+
+    static int rev2(int n) {
         // sometimes you might need some additional variables in the argument
         // in that case, make another function
         int digits = (int)(Math.log10(n)) + 1;
@@ -16,11 +26,7 @@ public class Palindrome {
         return rem * (int)(Math.pow(10, digits-1)) + helper(n/10, digits-1);
     }
 
-    static boolean palin(int n) {
-        return n == rev(n);
-    }
-
     public static void main(String[] args) {
-        System.out.println(palin(1));
+        System.out.println(rev2(1234));
     }
 }
